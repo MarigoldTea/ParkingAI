@@ -1,6 +1,13 @@
 # Soft Actor Critic with Unity ML-agents
 
 This project aims the notion of **"simple, yet powerful autonomous parking."**
+본 프로젝트의 멤버는 다음과 같습니다.
+
+ <a href = "https://github.com/LDH0094"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 이 덕현 (리더, 기획 및 Python API & SAC 알고리즘 구성 )
+  
+   <a href = "https://github.com/MarigoldTea"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원,  구조및 설계)
+
+
 
 The Unity Parking Enviornment provided (with ML-agents version Release 19) interacts with the Python API. Although it is still possible to launch a project without the python code on your end, this project applied python API so as to control the enviornment itself. 
 
