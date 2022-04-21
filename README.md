@@ -78,4 +78,4 @@ python -m pip install mlagents==0.28.0
 ```
 
 **이 프로젝트를 동작시키려면?**
-* 이 파일을 열고 실행합니다 [agent.ipynb](/Soft_Actor_Critic/agent.ipynb) 훈련이 자동으로 시작되고 완료되면 각 NN(신경망) 에 저장되어 저장된 파라미터가 로드 됩니다.
+*  [agent.ipynb](/Soft_Actor_Critic/agent.ipynb) 이 파일을 클릭하여 실행합니다,  훈련이 자동으로 시작되고 완료되면 각 NN(신경망) 에 저장되어 저장된 파라미터가 로드 됩니다.
