@@ -1,45 +1,41 @@
-# Soft Actor Critic with Unity ML-agents
+# Unity의 ML-Agents 툴킷을 사용,  자율주차에 중점을 둔 강화 학습 프로젝트
 
-This project aims the notion of **"simple, yet powerful autonomous parking."**
-본 프로젝트의 멤버는 다음과 같습니다.
+이 프로젝트는  **"간단하고, 확실한 자동주차 AI"** 를 모티브로 삼고 임 하였습니다.
+
+
+**본 프로젝트에 참여 한 팀원**
 
  <a href = "https://github.com/LDH0094"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 이 덕현 (리더, 기획 및 Python API & SAC 알고리즘 구성 )
   
  <a href = "https://github.com/MarigoldTea"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원, 환경 구조 및 설계) 
 
 
-### Why Unity Enviornment and not other?
+### 프로젝트 개요
 
-Making an enviornment for a RL project is time-consuming and often times, exhausting. The need for spliting the work for both the enviornment (what I view as the frontend) and the Python code (as backend) was necessary. In order to do so, Unity ML-agents was the best option that I could implement in my project. Indeed, Unity allows smoother simulation and with its powerful features that involve complex physcis provided more realistic simulation during the dry run (demo simulation before training the agent). 
+아직 초기 단계지만 자율주행이 점점 우리 일상 속으로 빠르게 녹아들고있습니다, 우리가 차량을 이용하면 어쩔수없이 마주치는 **주차** 는 어쩔때는 굉장히 피곤한 상황을 만들고는 합니다
+그래서 저희는 빠르게 발전하는 기술에 힘 입어 이런 프로젝트를 계획해서  만들어보면 좋지 않을까? 라는 호기심에서부터 시작되었습니다
 
+  
+  
 
-## AI AutoPark simulation results
+## 자율 주차 진행 및 결과 
 
-Episode: 0 ~ 500 (about 50K frames)    |  Episode: 500 ~ 1500 (about 150K frames)
+Episode: 0 ~ 500    |  Episode: 500 ~ 1500 
 :-------------------------:|:-------------------------:
  <img src="/screenshots/1.gif"> |  <img src="/screenshots/2.gif"> 
 
-When training data is not sufficiently stored, the agent seems lost and does not show any intelligence in searching for the right parking spot.
+훈련 데이터가 충분히 저장되지 않으면 올바른 주차를 하지못합니다
  
- Episode: 1500 ~ 20K (about 2M frames) |  Episode: 20K ~ 30K (about 3M frames)
+ Episode: 1500 ~ 2000  |  Episode: 20000 ~ 30000 
 :-------------------------:|:-------------------------:
  <img src="/screenshots/3.gif">  | <img src="/screenshots/4.gif"> 
 
- When training data is sufficiently stored and as its following NN begins to train, the agent seems confident and finds the right parking spot. 
+ 학습하면 학습할수록 모델이,  지정한 구역으로 주차를 하는 모습을 보실수 있습니다 
   
-
-## Ray Perception sensor
-
-<img src="/screenshots/Ray_perception_sensor.png" height="350"/> 
+## 자동차(Agent) 에 사용된 파일들 입니다
 
 
-In order to detect collision that happens within the enviornment, ray perception sensor is attached to the agent. This sensor is powerful when manipulating the agent's movement and steering angle (for this AI parking car project). As training attempts continue, you will notice that the ray perception sensor starts to act as the eye of the car that works very similar to Light Detection and Ranging (Lidar). 
-
-**Three key charaterics were observed during the experiment and these are:**
-
-* The agent starts to consider its surrounding through the sensor.
-* The agent begins to use the sensor to manipulate its movement.
-* The sensor allowed complicated parking control when parking spot is near. 
+  
 
 
 ## Results and Analysis
