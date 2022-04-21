@@ -5,7 +5,7 @@ This project aims the notion of **"simple, yet powerful autonomous parking."**
 
  <a href = "https://github.com/LDH0094"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 이 덕현 (리더, 기획 및 Python API & SAC 알고리즘 구성 )
   
- <a href = "https://github.com/MarigoldTea"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원,  구조및 설계) 
+ <a href = "https://github.com/MarigoldTea"><img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원, 환경 구조및 설계) 
 
 
 ### Why Unity Enviornment and not other?
