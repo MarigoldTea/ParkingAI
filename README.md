@@ -31,27 +31,44 @@ Episode: 0 ~ 500    |  Episode: 500 ~ 1500
  <img src="/screenshots/3.gif">  | <img src="/screenshots/4.gif"> 
 
  학습하면 학습할수록 차랑(Agent) 이 ,  지정한 구역으로 주차를 하는 모습을 보실수 있습니다 
-  
-## 자동차(Agent) 에 사용된 파일들 입니다
 
 
   
+## 감지 센서
+
+<img src="/screenshots/Ray_perception_sensor.png" height="350"/> 
 
 
-## Results and Analysis
+환경내 물체와 충돌을 감지하고 피하기 위해 감지 센서 를 Agent 에 사용합니다 이 센서는 충돌과 , Agent 가 목표를 향해 조작할때 매우 도움이됩니다 훈련이 계속 될수록 자율주행 자동차의 Light Detection and Ranging(Lidar) 와 매우 유사해짐을 볼수있습니다
+
+
+  
+
+**훈련 도중 3가지의 특성이 관찰 되었습니다**
+
+* Agent 는 센서를 통해 주변의 상황을 고려하기 시작합니다.
+* Agent 는 센서를 사용하여 움직임을 조작하기 시작합니다.
+* 센서는 목표물인 주차 장소가 가까워 질 때 복잡한 주차 제어를 가능하게 하였습니다 
+
+
+
+  
+
+
+## 결과 및 분석 
 
 <img src="/screenshots/result.png" height="350" width="400"/>
 
- **_Policy loss. The lower the better._**
+ **_Policy loss, 낮으면 낮을수록 좋은결과._**
 
-As it is clear in the graph, there is a slight oscillation. The first red arrow provides an idea that the agent was able to quickly understand its enviornment. 
+그래프에서 알수 있듯이, 약간의 진동이 있습니다.첫 번째 빨간색 화살표는 Agent가 주어진 환경을 빠르게 이해할 수 있다는것을 보여줍니다.
 
-Nonetheless, the sencond arrow demonstrates how extremely trained agent behave in the settled enviornment. When training data is stored with poor reward setting, the agent is again completely lost just like it behaved during the first few episodes. 
+두번째 화살표는 주어진 환경에서 훈련된 Agent 가 어떻게 행동하는지 보여줍니다. 만약 훈련 데이터가 잘못된 Reward 설정으로 저장되어버리면  Agent는 처음 에피소드 동안 작동한것처럼 완전히손실되어버립니다.
 
-This issue can, however, be fixed with re-defining its reward system. 
-## Get Started
+ 이 문제는 Reward 시스템을 다시 정의하면 해결 할수있습니다.
+## 시작하기
 
-**To get started with this project, you must install:**
+**프로젝트를 시작하려면 다음 내용을 설치하여야 합니다**
 ```sh
 pip install --upgrade pip
 pip install tensorflow
@@ -60,5 +77,5 @@ pip install --upgrade tensorflow-probability
 python -m pip install mlagents==0.28.0
 ```
 
-**To run this project:**
-* Open and run [agent.ipynb](/Soft_Actor_Critic/agent.ipynb) file. The training will automatically start and when finished will load the saved parameters for each NN. 
+**이 프로젝트를 동작시키려면?**
+* 이 파일을 열고 실행합니다 [agent.ipynb](/Soft_Actor_Critic/agent.ipynb) 훈련이 자동으로 시작되고 완료되면 각 NN(신경망) 에 저장되어 저장된 파라미터가 로드 됩니다.
