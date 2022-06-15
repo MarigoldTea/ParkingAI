@@ -3,11 +3,11 @@
 이 프로젝트는  **"간단하고, 확실한 자동주차 AI"** 를 모티브로 삼고 임 하였습니다.
 
 
-**본 프로젝트에 참여 한 팀원**
+**본 프로젝트에 참한 팀원**
 
- <a href = "https://github.com/LDH0094"> <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 이 덕현 (리더, 기획 및 Python API & SAC 알고리즘 구성 )
+ <a href = "https://github.&nbsp;om/LDH0094">&nbsp;<img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 이 덕현 (리더, 기획 및 Python API & SAC 알고리즘 구성 )
   
- <a href = "https://github.com/MarigoldTea"> <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원, 환경 구조 및 설계) 
+ <a href = "https://github.com/MarigoldTea">&nbsp;<img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> 조 재웅 (팀원, 환경 구조 및 설계) 
 
 
 ### 프로젝트 개요
